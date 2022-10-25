@@ -9,7 +9,6 @@ console.log(basket);
 // - add the new item to the global array `basket`.
 // - return `true` indicating the item was added
 
-
 // function addItem(items) {
 // 	let itemInBasket = basket.push(basket);
 // 	for (let item of items) {
@@ -19,14 +18,22 @@ console.log(basket);
 // 	}
 // }
 
-function addItem(foodToAdd){
-	let addFood = foodToAdd
+function addItem(foodToAdd) {
+	let addFood = foodToAdd;
 	basket.push(foodToAdd);
-	console.log(addFood)
+	console.log(addFood);
 	return true;
 }
 
 addItem("potatoes");
-addItem('brocoli');
+addItem("brocoli");
 
 console.log(`Basket is ${basket}`);
+
+function listItems() {}
+let text = " ";
+for (let i = 0; i < basket.length; i++) {
+	console.log((text += basket[i]));
+}
+
+console.log(listItems(basket));
